@@ -2,7 +2,7 @@
 
 [![IFCT2017](http://ninindia.org/images/ifct_2017.png)](http://ninindia.org/ifct_2017.htm)
 
-Language abbreviations in [Indian Food Composition Tables 2017].
+Language abbreviations in [Indian Food Composition Tables 2017].<br>
 Check supported [language abbreviations].
 
 ```javascript
