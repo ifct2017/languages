@@ -1,0 +1,27 @@
+{
+  "name": "@ifct2017/languages",
+  "version": "0.2.0",
+  "description": "Language abbreviations in Indian Food Composition Tables 2017.",
+  "main": "index.js",
+  "scripts": {
+    "test": "exit"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ifct2017/languages.git"
+  },
+  "keywords": [
+    "ifct",
+    "2017",
+    "languages"
+  ],
+  "author": "wolfram77@gmail.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ifct2017/languages/issues"
+  },
+  "homepage": "https://github.com/ifct2017/languages#readme",
+  "devDependencies": {
+    "csv": "^2.0.0"
+  }
+}
