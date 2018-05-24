@@ -1,5 +1,6 @@
-const corpus = require('./corpus');
+const Sql = require('sql-extra');
 const path = require('path');
+const corpus = require('./corpus');
 
 function createRegex(lst) {
   var z = '(^|\\W+)(';
@@ -16,6 +17,12 @@ const MATCH = createRegex(corpus.keys());
 function csv() {
   return path.join(__dirname, 'index.csv');
 };
+
+function sql(tab='languages', opt={}) {
+  return Sql.setupTable(tab, {abbr: 'TEXT', lang: 'TEXT'}, corpus.values(),
+    Object.assign({pk: 'abbr', index: true, tsvector: {abbr: 'A', lang: 'B'}}, opt));
+};
+
 function languages(txt) {
   var txt = txt.replace(REPLACE, (m, p1) => {
     var v = m.replace(/\W/g, '');
@@ -26,5 +33,6 @@ function languages(txt) {
   return corpus.get(m[2].replace('.', ''));
 };
 languages.csv = csv;
+languages.sql = sql;
 languages.corpus = corpus;
 module.exports = languages;
