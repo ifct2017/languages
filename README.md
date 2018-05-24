@@ -10,6 +10,7 @@ const languages = require('@ifct2017/languages');
 // languages(<query>)
 // -> {abbr, lang} if supported, null otherwise.
 // languages.corpus: Map {abbr => {abbr, lang}}
+// languages.sql([table], [options]): sql commands
 // languages.csv(): path of csv file
 
 languages('mal.');
