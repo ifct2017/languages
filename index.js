@@ -26,7 +26,7 @@ function csv() {
 };
 
 function sql(tab='languages', opt={}) {
-  return Sql.setupTable(tab, {abbr: 'TEXT', lang: 'TEXT'}, corpus.values(),
+  return Sql.setupTable(tab, {abbr: 'TEXT', lang: 'TEXT'}, require('./corpus').values(),
     Object.assign({pk: 'abbr', index: true, tsvector: {abbr: 'A', lang: 'B'}}, opt));
 };
 
