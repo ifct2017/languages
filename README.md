@@ -7,11 +7,16 @@ Check supported [language abbreviations].
 
 ```javascript
 const languages = require('@ifct2017/languages');
-// languages(<query>)
-// -> {abbr, lang} if supported, null otherwise.
 // languages.corpus: Map {abbr => {abbr, lang}}
+// languages.load(): true (corpus loaded)
 // languages.sql([table], [options]): sql commands
 // languages.csv(): path of csv file
+// languages(<query>)
+// -> {abbr, lang} if supported, null otherwise.
+
+
+languages.load();
+/* load corpus first */
 
 languages('mal.');
 languages('Mal');
