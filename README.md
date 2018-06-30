@@ -1,4 +1,4 @@
-[Language abbreviations] in [Indian Food Composition Tables 2017].<br>
+[Language abbreviations] in [Indian Food Composition Tables 2017].
 
 ```javascript
 const languages = require('@ifct2017/languages');
