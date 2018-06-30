@@ -1,9 +1,4 @@
-# @ifct2017/languages
-
-[![ifct2017](http://ninindia.org/images/ifct_2017.png)](https://www.npmjs.com/package/ifct2017)
-
-Language abbreviations in [Indian Food Composition Tables 2017].<br>
-Check supported [language abbreviations].
+[Language abbreviations] in [Indian Food Composition Tables 2017].<br>
 
 ```javascript
 const languages = require('@ifct2017/languages');
@@ -30,5 +25,14 @@ languages('S. stands for?');
 ```
 
 
+[![ifct2017](http://ninindia.org/images/ifct_2017.png)](https://www.npmjs.com/package/ifct2017)
+> You can ask about composition of 528 key foods in India here: [ifct2017.github.io].<br>
+> Food composition values were measured by [National Institute of Nutrition, Hyderabad].<br>
+> Take a peek at the raw data here: [Document], [Webpage].
+
 [Indian Food Composition Tables 2017]: http://ifct2017.com/
-[language abbreviations]: https://github.com/ifct2017/languages/blob/master/index.csv
+[Language abbreviations]: https://github.com/ifct2017/languages/blob/master/index.csv
+[ifct2017.github.io]: https://ifct2017.github.io
+[National Institute of Nutrition, Hyderabad]: http://www.ninindia.org
+[Document]: https://docs.google.com/spreadsheets/d/1NrdVtCYtmxooVtdGj9UQOPR7l4HIJc9qeI7BNoytGhI/edit?usp=sharing
+[Webpage]: https://docs.google.com/spreadsheets/d/e/2PACX-1vTrDSLb2ABbFM8v7QVXqVR0QV7ha58ZJS3Kw6RmtgcwaN6GjNv_hfEZ3K-NqACpT9sIyv7oFysY6z_p/pubhtml
