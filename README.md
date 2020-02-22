@@ -1,4 +1,7 @@
-[Language abbreviations] in [Indian Food Composition Tables 2017].
+Full form of [language abbreviations].
+> This is part of package [ifct2017].<br>
+> Source: [Indian Food Composition Tables 2017].
+
 
 ```javascript
 const languages = require('@ifct2017/languages');
@@ -30,8 +33,9 @@ languages('S. stands for?');
 > Food composition values were measured by [National Institute of Nutrition, Hyderabad].<br>
 > Take a peek at the raw data here: [Document], [Webpage].
 
+[ifct2017]: https://www.npmjs.com/package/ifct2017
 [Indian Food Composition Tables 2017]: http://ifct2017.com/
-[Language abbreviations]: https://github.com/ifct2017/languages/blob/master/index.csv
+[language abbreviations]: https://github.com/ifct2017/languages/blob/master/index.csv
 [ifct2017.github.io]: https://ifct2017.github.io
 [National Institute of Nutrition, Hyderabad]: http://www.ninindia.org
 [Document]: https://docs.google.com/spreadsheets/d/1NrdVtCYtmxooVtdGj9UQOPR7l4HIJc9qeI7BNoytGhI/edit?usp=sharing
