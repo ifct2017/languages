@@ -1,20 +1,15 @@
 Full form of [language abbreviations].
-> This is part of package [ifct2017].<br>
-> Source: [Indian Food Composition Tables 2017].
 
+> This is part of package [ifct2017].<br>
+> Online database: [ifct2017.github.io].
+
+<br>
 
 ```javascript
 const languages = require('@ifct2017/languages');
-// languages.corpus: Map {abbr => {abbr, lang}}
-// languages.load(): true (corpus loaded)
-// languages.sql([table], [options]): sql commands
-// languages.csv(): path of csv file
-// languages(<query>)
-// -> {abbr, lang} if supported, null otherwise.
+// languages(query)
+// → {abbr, lang} if found, null otherwise.
 
-
-languages.load();
-/* load corpus first */
 
 languages('mal.');
 languages('Mal');
@@ -22,14 +17,27 @@ languages('Mal');
 
 languages('what is s.?');
 languages('S. stands for?');
-/* (full stops must immediately follow character, if present) */
-/* (for single character abbreviations, full stop is mandatory) */
 // { abbr: 'S.', lang: 'Sanskrit' }
+
+
+// Note:
+// Full stops must immediately follow character, if present.
+// For single character abbreviations, full stop is mandatory.
 ```
 
+```javascript
+// Additional methods:
+languages.load() // → corpus
+languages.sql([table], [options]) // → sql statements
+languages.csv() // → path of csv data file
+```
 
-[![ifct2017](http://ifct2017.com/ifct_2017.jpg)](https://www.npmjs.com/package/ifct2017)
-> You can ask about composition of 528 key foods in India here: [ifct2017.github.io].<br>
+<br>
+<br>
+
+[![](https://i.imgur.com/D5UYmbD.jpg)](https://www.npmjs.com/package/ifct2017)
+
+> Data was obtained from the book [Indian Food Composition Tables 2017].<br>
 > Food composition values were measured by [National Institute of Nutrition, Hyderabad].<br>
 > Take a peek at the raw data here: [Document], [Webpage].
 
