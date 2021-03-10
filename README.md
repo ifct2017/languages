@@ -29,13 +29,13 @@ languages('S. stands for?');
 // Additional methods:
 languages.load() // → corpus
 languages.sql([table], [options]) // → sql statements
-languages.csv() // → path of csv data file
+languages.csv() // → path of csv file
 ```
 
 <br>
 <br>
 
-[![](https://i.imgur.com/D5UYmbD.jpg)](https://www.npmjs.com/package/ifct2017)
+[![](https://i.imgur.com/D5UYmbD.jpg)](http://ifct2017.com/)
 
 > Data was obtained from the book [Indian Food Composition Tables 2017].<br>
 > Food composition values were measured by [National Institute of Nutrition, Hyderabad].<br>

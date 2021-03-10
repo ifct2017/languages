@@ -29,7 +29,7 @@ function csv() {
 }
 
 function sql(tab='languages', opt={}) {
-  return esql.setupTable(tab, {abbr: 'TEXT', lang: 'TEXT'}, require('./corpus').values(),
+  return esql.setupTable(tab, {abbr: 'TEXT', lang: 'TEXT'}, load().values(),
     Object.assign({pk: 'abbr', index: true, tsvector: {abbr: 'A', lang: 'B'}}, opt));
 }
 
