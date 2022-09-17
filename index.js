@@ -3,7 +3,7 @@ const esql = require('sql-extra');
 
 const REPLACE = /((\w\s+|\w\.\s*|\w\-\s*|\w$)+)|\w+/g;
 var corpus = null;
-var match = null;
+var match  = null;
 
 
 
@@ -20,7 +20,7 @@ function createRegex(lst) {
 function load() {
   if (corpus) return corpus;
   corpus = require('./corpus');
-  match = createRegex(corpus.keys());
+  match  = createRegex(corpus.keys());
   return corpus;
 }
 
@@ -45,6 +45,6 @@ function languages(txt) {
   return corpus.get(m[2].replace('.', ''));
 }
 languages.load = load;
-languages.csv = csv;
-languages.sql = sql;
+languages.csv  = csv;
+languages.sql  = sql;
 module.exports = languages;
